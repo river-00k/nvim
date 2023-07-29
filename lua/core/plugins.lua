@@ -12,8 +12,32 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
+  -- Package Manager
   use 'wbthomason/packer.nvim'
+
+  -- completion
+  use 'hrsh7th/nvim-cmp' -- The completion plugin
+  use "hrsh7th/cmp-buffer" -- buffer completions
+  use "hrsh7th/cmp-path" -- path completions
+  use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use 'saadparwaiz1/cmp_luasnip' -- snippet completions
+  use 'hrsh7th/cmp-nvim-lsp'
+  use "windwp/nvim-autopairs" -- Autopairs
+
+  -- snippets
+  use 'L3MON4D3/LuaSnip' ---snippet engin
+  -- use "rafamadriz/friendly-snippets"
+
+  -- LSP
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
+  use "neovim/nvim-lspconfig"
+  use "glepnir/lspsaga.nvim"
+
+  -- Visual
   use 'ellisonleao/gruvbox.nvim'
+
+  -- Tree
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
