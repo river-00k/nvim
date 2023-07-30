@@ -16,11 +16,14 @@ keymap("n", "gl", "gt", opts)
 keymap("n", "ss", ":split<Return><C-w>w", opts)
 keymap("n", "sv", ":vsplit<Return><C-w>w", opts)
 
+-- Better window navigation
+keymap("n", "<C-h>", "<C-w>h", opts)
+keymap("n", "<C-j>", "<C-w>j", opts)
+keymap("n", "<C-k>", "<C-w>k", opts)
+keymap("n", "<C-l>", "<C-w>l", opts)
+
 -- Select all
 keymap("n", "<C-a>", "gg<S-v>G", opts)
-
--- Move cursor
-keymap("n", "<C-l>", "<Right>", opts)
 
 -- Do not yank with x
 keymap("n", "x", '"_x', opts)
@@ -38,4 +41,5 @@ keymap("n", "<Esc><Esc>", ":<C-u>set nohlsearch<Return>", opts)
 -- Insert --
 -- Press jk fast to exit insert mode
 keymap("i", "jk", "<ESC>", opts)
-keymap("i", "<C-l>", "<Right>", opts)
+keymap("i", "<C-f>", "<Right>", opts)
+keymap("i", "<C-b>", "<Left>", opts)
