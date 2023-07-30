@@ -19,6 +19,9 @@ keymap("n", "sv", ":vsplit<Return><C-w>w", opts)
 -- Select all
 keymap("n", "<C-a>", "gg<S-v>G", opts)
 
+-- Move cursor
+keymap("n", "<C-l>", "<Right>", opts)
+
 -- Do not yank with x
 keymap("n", "x", '"_x', opts)
 
@@ -28,3 +31,11 @@ keymap("n", "dw", 'vb"_d', opts)
 -- 行の端に行く
 keymap("n", "<Space>h", "^", opts)
 keymap("n", "<Space>l", "$", opts)
+
+-- Delete highlightes
+keymap("n", "<Esc><Esc>", ":<C-u>set nohlsearch<Return>", opts)
+
+-- Insert --
+-- Press jk fast to exit insert mode
+keymap("i", "jk", "<ESC>", opts)
+keymap("i", "<C-l>", "<Right>", opts)
