@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
   use 'saadparwaiz1/cmp_luasnip' -- snippet completions
   use 'hrsh7th/cmp-nvim-lsp'
   use "windwp/nvim-autopairs" -- Autopairs
+  use "windwp/nvim-ts-autotag" -- HTML completions
 
   -- snippets
   use 'L3MON4D3/LuaSnip' ---snippet engin
@@ -36,15 +37,18 @@ return require('packer').startup(function(use)
 
   -- Visual
   use 'ellisonleao/gruvbox.nvim'
+  use "lukas-reineke/indent-blankline.nvim"
+  use 'nvim-lualine/lualine.nvim' -- Status line
 
-  -- Tree
+
+  -- Tree (Use tree Ctl + n)
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
-  use 'nvim-lualine/lualine.nvim'
 
-  -- Treesitter
+  -- Treesitter (Highlight)
   use({ "nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" } })
-  -- Telescope
+
+  -- Telescope (File searching)
   use {
    'nvim-telescope/telescope.nvim', tag = '0.1.2',
     requires = { {'nvim-lua/plenary.nvim'} }
