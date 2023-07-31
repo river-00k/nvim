@@ -16,25 +16,26 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- completion
-  use 'hrsh7th/nvim-cmp' -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "hrsh7th/cmp-path" -- path completions
-  use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use 'saadparwaiz1/cmp_luasnip' -- snippet completions
-  use 'hrsh7th/cmp-nvim-lsp'
+  use 'neoclide/coc.nvim'
   use "windwp/nvim-autopairs" -- Autopairs
   use "windwp/nvim-ts-autotag" -- HTML completions
+  -- use 'hrsh7th/nvim-cmp' -- The completion plugin
+  -- use "hrsh7th/cmp-buffer" -- buffer completions
+  -- use "hrsh7th/cmp-path" -- path completions
+  -- use "hrsh7th/cmp-cmdline" -- cmdline completions
+  -- use 'saadparwaiz1/cmp_luasnip' -- snippet completions
+  -- use 'hrsh7th/cmp-nvim-lsp'
 
   -- snippets
-  use 'L3MON4D3/LuaSnip' ---snippet engin
+  -- use 'L3MON4D3/LuaSnip' ---snippet engin
   -- use "rafamadriz/friendly-snippets"
 
   -- LSP
-  use "williamboman/mason.nvim"
-  use "williamboman/mason-lspconfig.nvim"
-  use "neovim/nvim-lspconfig"
-  use "glepnir/lspsaga.nvim"
-  use "onsails/lspkind-nvim"
+  -- use "williamboman/mason.nvim"
+  -- use "williamboman/mason-lspconfig.nvim"
+  -- use "neovim/nvim-lspconfig"
+  -- use "glepnir/lspsaga.nvim"
+  -- use "onsails/lspkind-nvim"
 
   -- Visual
   use 'ellisonleao/gruvbox.nvim'
