@@ -34,6 +34,7 @@ return require('packer').startup(function(use)
   use "williamboman/mason-lspconfig.nvim"
   use "neovim/nvim-lspconfig"
   use "glepnir/lspsaga.nvim"
+  use "onsails/lspkind-nvim"
 
   -- Visual
   use 'ellisonleao/gruvbox.nvim'
@@ -55,6 +56,8 @@ return require('packer').startup(function(use)
   }
   use "nvim-telescope/telescope-file-browser.nvim"
 
+  --comment
+  use "numToStr/Comment.nvim"
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
