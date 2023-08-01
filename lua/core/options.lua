@@ -19,3 +19,6 @@ vim.cmd [[ set noswapfile ]]
 
 --Line numbers
 vim.wo.number = true
+
+--clipboaord
+vim.opt.clipboard:append{'unnamedplus'}
