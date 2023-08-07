@@ -43,3 +43,6 @@ keymap("n", "<Esc><Esc>", ":<C-u>set nohlsearch<Return>", opts)
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "<C-f>", "<Right>", opts)
 keymap("i", "<C-b>", "<Left>", opts)
+
+-- Terminal mode --
+keymap('t', '<Space>q', '<C-\\><C-n>', { silent = true })
