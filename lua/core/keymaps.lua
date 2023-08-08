@@ -45,4 +45,4 @@ keymap("i", "<C-f>", "<Right>", opts)
 keymap("i", "<C-b>", "<Left>", opts)
 
 -- Terminal mode --
-keymap('t', '<Space>q', '<C-\\><C-n>', { silent = true })
+keymap('t', '<Esc><Esc>', '<C-\\><C-n>', { silent = true })
