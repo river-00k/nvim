@@ -42,7 +42,6 @@ return require('packer').startup(function(use)
   use "lukas-reineke/indent-blankline.nvim"
   use 'nvim-lualine/lualine.nvim' -- Status line
 
-
   -- Tree (Use tree Ctl + n)
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
@@ -62,6 +61,10 @@ return require('packer').startup(function(use)
 
   --copilot
   use 'github/copilot.vim'
+
+
+  -- toggleterm
+  use "akinsho/nvim-toggleterm.lua"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
