@@ -1,5 +1,17 @@
 {
   "coc.preferences.formatOnSave": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "html",
+    "markdown",
+    "typescriptreact",
+    "typescript",
+    "javascriptreact",
+    "javascript",
+    "json",
+    "graphql",
+    "go"
+  ],
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
   "languageserver": {
