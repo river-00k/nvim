@@ -66,6 +66,10 @@ return require('packer').startup(function(use)
   -- toggleterm
   use "akinsho/nvim-toggleterm.lua"
 
+  -- view for symbols
+  use 'simrat39/symbols-outline.nvim'
+  -- use 'liuchengxu/vista.vim'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

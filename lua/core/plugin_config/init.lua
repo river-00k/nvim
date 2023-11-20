@@ -10,6 +10,7 @@ require("core.plugin_config.indent-blankline")
 require("core.plugin_config.comment")
 require("core.plugin_config.coc")
 require("core.plugin_config.toggleterm")
+require("core.plugin_config.symbols-outline")
 -- require("core.plugin_config.lsp_config")
 -- require("core.plugin_config.lspkind")
 
