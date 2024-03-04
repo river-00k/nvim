@@ -39,7 +39,7 @@ return require('packer').startup(function(use)
 
   -- Visual
   use 'ellisonleao/gruvbox.nvim'
-  use "lukas-reineke/indent-blankline.nvim"
+  use {"lukas-reineke/indent-blankline.nvim", main = "ibl"}
   use 'nvim-lualine/lualine.nvim' -- Status line
 
   -- Tree (Use tree Ctl + n)
