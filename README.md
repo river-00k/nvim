@@ -7,3 +7,7 @@
 ## golang
 
 `go install golang.org/x/tools/gopls@latest`
+
+# Error
+
+tree-sitter error: `:TSUpdate`
