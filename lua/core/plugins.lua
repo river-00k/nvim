@@ -62,6 +62,8 @@ return require('packer').startup(function(use)
   --copilot
   use 'github/copilot.vim'
 
+  --git
+  use "lewis6991/gitsigns.nvim"
 
   -- toggleterm
   use "akinsho/nvim-toggleterm.lua"
