@@ -1,17 +1,5 @@
 {
   "coc.preferences.formatOnSave": true,
-  "coc.preferences.formatOnSaveFiletypes": [
-    "css",
-    "html",
-    "markdown",
-    "typescriptreact",
-    "typescript",
-    "javascriptreact",
-    "javascript",
-    "json",
-    "graphql",
-    "go"
-  ],
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
   "languageserver": {
@@ -19,6 +7,21 @@
       "command": "gopls",
       "rootPatterns": ["go.mod", ".vim/", "./git", ".hg/"],
       "filetypes": ["go"]
+    },
+    "python": {
+      "command": "pyright-langserver",
+      "args": ["--stdio"],
+      "filetypes": ["python"],
+      "rootPatterns": [
+        ".git/",
+        "setup.py",
+        "setup.cfg",
+        "pyproject.toml",
+        "requirements.txt"
+      ],
+      "settings": {
+        "python.pythonPath": "/usr/bin/python3"
+      }
     }
   }
 }
