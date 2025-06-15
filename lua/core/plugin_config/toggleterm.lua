@@ -10,7 +10,10 @@ toggleterm.setup({
   shading_factor = 1, -- the degree by which to darken to terminal colour, default: 1 for dark backgrounds, 3 for light
   start_in_insert = true,
   insert_mappings = true, -- whether or not the open mapping applies in insert mode
-  persist_size
+  persist_size = true,
+  direction = 'horizontal'
 })
 
-vim.keymap.set('n', 'tg', ':ToggleTerm <CR>')
+-- Set up keymapping for Ctrl+t
+vim.keymap.set('n', '<C-t>', ':ToggleTerm<CR>')
+vim.keymap.set('t', '<C-t>', '<C-\\><C-n>:ToggleTerm<CR>')

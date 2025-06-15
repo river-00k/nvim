@@ -66,7 +66,7 @@ return require('packer').startup(function(use)
   use "lewis6991/gitsigns.nvim"
 
   -- toggleterm
-  use "akinsho/nvim-toggleterm.lua"
+  use "akinsho/toggleterm.nvim"
 
   -- view for symbols
   use 'simrat39/symbols-outline.nvim'
